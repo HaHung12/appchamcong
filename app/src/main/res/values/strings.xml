@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">My Application</string>
+
+    <!-- Mảng cho Spinner ngày chốt lương -->
+    <string-array name="ngay_chot_array">
+        <item>Ngày cuối cùng của mỗi tháng</item>
+        <item>Ngày 25 hàng tháng</item>
+        <item>Ngày 15 hàng tháng</item>
+        <item>Tùy chọn khác...</item>
+    </string-array>
+</resources>

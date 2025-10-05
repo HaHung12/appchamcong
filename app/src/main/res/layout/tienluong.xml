@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#121212"
+    android:padding="0dp">
+
+    <!-- Thanh tiêu đề -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="12dp"
+        android:background="#121212">
+
+        <TextView
+            android:id="@+id/tvBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Trở về"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Tạo công việc mới"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/tvNext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tiếp tục"
+            android:textSize="16sp"
+            android:textColor="#2979FF" />
+    </LinearLayout>
+    <!-- Nội dung chính -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Tiền công 1 ngày -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tiền công 1 ngày *"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="6dp" />
+
+        <EditText
+            android:id="@+id/etTienCong"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="0"
+            android:background="@android:drawable/edit_text"
+            android:padding="12dp"
+            android:inputType="number"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#888888" />
+
+        <!-- Ngày chốt tiền lương -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ngày chốt tiền lương *"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="6dp" />
+
+        <Spinner
+            android:id="@+id/spNgayChotLuong"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:popupBackground="#222222"
+            android:background="@android:drawable/editbox_dropdown_light_frame"
+            android:entries="@array/ngay_chot_array"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Ghi chú -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="* Ngày chốt tiền lương là ngày làm việc cuối cùng của bạn trong tháng đó. Hệ thống sẽ dựa trên ngày chốt tiền lương để lập bảng lương phù hợp cho bạn."
+            android:textColor="#AAAAAA"
+            android:textSize="16sp"
+            android:lineSpacingExtra="2dp"
+            android:layout_marginTop="4dp" />
+
+    </LinearLayout>
+
+</LinearLayout>
