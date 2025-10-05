@@ -42,12 +42,6 @@
             android:textColor="#2979FF" />
     </LinearLayout>
 
-    <!-- Thanh tiến trình màu xanh -->
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="2dp"
-        android:background="#2979FF" />
-
     <!-- Nội dung -->
     <ScrollView
         android:layout_width="match_parent"
@@ -93,8 +87,7 @@
                     android:id="@+id/icCalendar"
                     android:layout_width="24dp"
                     android:layout_height="24dp"
-                    android:src="@drawable/ic_calendar"
-                    android:tint="#AAAAAA"
+                    android:src="@drawable/lich"
                     android:padding="4dp" />
             </LinearLayout>
 
@@ -113,7 +106,7 @@
                 android:layout_height="50dp"
                 android:orientation="horizontal"
                 android:gravity="center_vertical"
-                android:background="@drawable/bg_input_box"
+                android:background="@drawable/btn_continue_bg"
                 android:paddingHorizontal="12dp">
 
                 <EditText
@@ -132,8 +125,7 @@
                     android:id="@+id/icTime"
                     android:layout_width="24dp"
                     android:layout_height="24dp"
-                    android:src="@drawable/ic_clock"
-                    android:tint="#AAAAAA"
+                    android:src="@drawable/clock"
                     android:padding="4dp" />
             </LinearLayout>
 

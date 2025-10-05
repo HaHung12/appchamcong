@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#121212"
+    android:padding="0dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Thanh tiêu đề -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingHorizontal="12dp">
+
+            <TextView
+                android:id="@+id/tvBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Trở về"
+                android:textSize="16sp"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Cá nhân"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:gravity="center"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/tvEdit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sửa"
+                android:textSize="16sp"
+                android:textColor="#2979FF" />
+        </LinearLayout>
+
+        <!-- Đường kẻ màu xanh -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#2979FF" />
+
+        <!-- Thông tin cá nhân -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:padding="20dp">
+
+            <ImageView
+                android:id="@+id/imgAvatar"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/canhan"
+                android:scaleType="centerCrop"
+                android:background="@drawable/bg_avatar_circle"
+                android:padding="8dp" />
+
+            <TextView
+                android:id="@+id/tvUserName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nguyễn Văn A"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:layout_marginTop="12dp" />
+
+            <TextView
+                android:id="@+id/tvEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="nguyenvana@gmail.com"
+                android:textSize="14sp"
+                android:textColor="#AAAAAA"
+                android:layout_marginTop="4dp" />
+        </LinearLayout>
+
+        <!-- Các mục chức năng -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:divider="@drawable/divider_line"
+            android:showDividers="middle">
+
+            <!-- Thông tin cá nhân -->
+            <LinearLayout
+                style="@style/ItemSetting"
+                android:id="@+id/itemThongTin"
+                android:background="@drawable/btn_continue_bg">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Thông tin cá nhân"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"/>
+
+            </LinearLayout>
+
+            <!-- Đổi mật khẩu -->
+            <LinearLayout
+                style="@style/ItemSetting"
+                android:background="@drawable/btn_continue_bg"
+                android:id="@+id/itemDoiMatKhau">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Đổi mật khẩu"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"/>
+            </LinearLayout>
+
+            <!-- Ngày bắt đầu làm việc -->
+            <LinearLayout
+                style="@style/ItemSetting"
+                android:background="@drawable/btn_continue_bg"
+                android:id="@+id/itemNgayBatDau">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ngày bắt đầu làm việc"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"/>
+            </LinearLayout>
+
+            <!-- Thời gian nhắc nhở -->
+            <LinearLayout
+                style="@style/ItemSetting"
+                android:background="@drawable/btn_continue_bg"
+                android:id="@+id/itemNhacNho">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Thời gian nhắc nhở chấm công"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"/>
+            </LinearLayout>
+
+            <!-- Đăng xuất -->
+            <LinearLayout
+                style="@style/ItemSetting"
+                android:id="@+id/itemDangXuat">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Đăng xuất"
+                    android:textColor="#FF5252"
+                    android:textSize="16sp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
